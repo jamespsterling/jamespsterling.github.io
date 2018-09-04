@@ -96,6 +96,10 @@ body {
     }
 }
 
+.justify {
+    text-align: justify; 
+}
+
 // No JS styles
 .no-js {
     #experience-timeline {
@@ -376,6 +380,7 @@ footer {
         font-size: 2.25em;
         margin-bottom: 15px;
         // text-shadow: 0 2px 6px rgba(0, 0, 0, 0.33);
+        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
     }
 }
 
@@ -387,7 +392,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.5);
+    background: rgba($base-color-hover, 0.425);
     z-index: 1;
 }
 

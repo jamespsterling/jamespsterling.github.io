@@ -23,7 +23,7 @@
 
 #lead:after {
   animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
-  background: #F9FCFF;
+  background: rgba(187, 163, 204, 0.75);
   opacity: 0.4;
   content: "";
   height: 20rem;
