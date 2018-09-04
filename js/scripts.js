@@ -70,4 +70,8 @@
         $('header, body').removeClass('active');
     });
 
+    var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+
 })(jQuery);
