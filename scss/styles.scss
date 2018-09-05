@@ -949,3 +949,117 @@ footer {
     }
 
 }
+
+.york-loader {
+    height: 200px;
+}
+
+.svg-wrapper {
+    height: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+    width: 320px;
+}
+
+.yellow {
+    fill: transparent;
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 10 40;
+    stroke: #FFCF2B;
+    animation: 3s .2s draw-yellow infinite;
+}
+
+.blue {
+    fill: transparent;
+    stroke-width: 2px;
+    stroke-dashoffset: 40;
+    stroke-dasharray: 100 40;
+    stroke: #0076BF;
+    animation: 3s .1s draw-blue infinite;
+}
+
+.green {
+    fill: transparent;
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 10 40;
+    stroke: #00C081;
+    animation: 3s .3s draw-green infinite;
+}
+
+.shadow {
+    animation: 3s .5s draw-shadow infinite;
+}
+
+@keyframes draw-yellow {
+    0% {
+        stroke-dasharray: 0 540;
+        stroke-dashoffset: -75;
+    }
+
+    50% {
+        fill: #FFCF2B;
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        fill: transparent;
+        stroke-dasharray: 0 540;
+        stroke-dashoffset: 5;
+    }
+}
+
+@keyframes draw-blue {
+    0% {
+        stroke-dasharray: 0 540;
+        stroke-dashoffset: -75;
+    }
+
+    50% {
+        fill: #0076BF;
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        fill: transparent;
+        stroke-dasharray: 0 540;
+        stroke-dashoffset: -45;
+    }
+}
+
+@keyframes draw-green {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -75;
+    }
+
+    50% {
+        fill: #00C081;
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        fill: transparent;
+        stroke-dasharray: 0 540;
+        stroke-dashoffset: -175;
+    }
+}
+
+@keyframes draw-shadow {
+    0% {
+        fill: transparent;
+    }
+
+    35% {
+        fill: #BBBDBF;
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
