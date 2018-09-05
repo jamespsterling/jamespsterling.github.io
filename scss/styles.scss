@@ -325,7 +325,7 @@ footer {
 }
 
 .shadow-large {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 45px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
 }
 
 .heading {
@@ -592,10 +592,17 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    background: #34cc8c;
+    background: linear-gradient(35deg, #45a07a 0%, #19f575 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45a07a', endColorstr='#19f575',GradientType=0 );
 
     h2 {
-        color: $heading;
+        color: #f2f2f2;
         margin-bottom: 50px;
+
+        &:after {
+            background: lighten($heading, 10%);
+        }
     }
 }
 
@@ -605,6 +612,7 @@ footer {
     padding: 15px;
     border: 1px solid $border;
     text-align: left;
+    background: #fff;
 
     h3 {
         font-weight: 500;
