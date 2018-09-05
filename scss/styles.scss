@@ -597,7 +597,8 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45a07a', endColorstr='#19f575',GradientType=0 );
 
     h2 {
-        color: #f2f2f2;
+        color: #fff;
+        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
         margin-bottom: 50px;
 
         &:after {
