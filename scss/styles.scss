@@ -643,6 +643,20 @@ footer {
     ul {
         padding: 0 0 0 15px;
     }
+
+    .education-header {
+        display: inline-block;
+
+        img {
+            height: 48px;
+        }
+
+        .education-text-header {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+    }
 }
 
 /*
