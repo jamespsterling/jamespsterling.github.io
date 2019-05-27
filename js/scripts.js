@@ -49,8 +49,11 @@
         });
 
         // Add icons to each block
+        var i = 0, 
+            icons = ['fab fa-node-js', 'fas fa-laptop-code', 'fab fa-php', 'fas fa-code'];
         $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fas fa-laptop-code"></i></div>');
+            $(this).prepend('<div class="vtimeline-icon"><i class="' + icons[i] + '"></i></div>');
+            i++;
         });
 
         // Add dates to the timeline if exists

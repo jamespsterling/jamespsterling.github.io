@@ -21,8 +21,8 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('styles', function() {
-    return gulp.src('scss/styles.scss')
+gulp.task('scss', function() {
+    return gulp.src('scss/*.scss')
         .pipe(plumber(plumber({
             errorHandler: function (err) {
                 console.log(err);
@@ -34,7 +34,20 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('watch', ['scripts', 'styles'], function() {
+gulp.task('sass', function() {
+    return gulp.src('scss/*.sass')
+        .pipe(plumber(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        })))
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('css'));
+});
+
+gulp.task('watch', ['scripts', 'scss', 'sass'], function() {
     gulp.watch('js/*.js', ['scripts']);
-    gulp.watch('scss/*.scss', ['styles']);
+    gulp.watch('scss/*', ['scss', 'sass']);
 });
