@@ -1,0 +1,54 @@
+{
+  "jobs": [
+    {
+      "employer": "Nortal",
+      "title": "Software Development Engineer",
+      "description": ["Works with Angular 10+, monorepo, HAPI, Adobe AEM"]
+    },
+    {
+      "employer": "Extreme Arts + Sciences",
+      "title": "Sr. Full Stack Developer",
+      "description": [
+        "Full-stack development focused on building unique solutions for our clients that includes PHP (Laravel & custom), HTML5, CSS/Sass, Front-end/Back-end Node/JS (Ractive.js, React-native, jQuery, Typescript, HapiJs, Joi, ExpressJs, ES6, and more), Build & Task runners (Grunt, Webpack), UI Unit and Automation testing (PHPUnit, Ruby, Cucumber, Selenium), Ionic (Angular 7/8) Mobile App Development, and Sitecore (C# XP 9) development and support, containerization using Docker/Docker-compose, cloud platform operations support and configuration (Azure, AWS, & Google Cloud Platform).",
+        "Encourages test-driven development by leveraging Unit testing as well as QA Automation testing with Ruby, Cucumber and Selenium."
+      ]
+    },
+    {
+      "employer": "York Risk Services Group, Inc.",
+      "title": "Full Stack Developer",
+      "description": [
+        "Works with web technologies such as HTML5, CSS3, Responsive Web Design, PHP (Laravel, Joomla, Wordpress), JavaScript (AngularJS, jQuery, RivetsJS, MVVM), LAMP Stack/Administration, MySQL/MSSQL, MongoDB, Apache Solr, Task Runners (Grunt, Gulp, Yarn), ASP.Net Webforms/MVC/Entity Framework and processes such as user experience design (UXD) and user interface design (UID), web presence, web mastery.",
+        "Leads colleagues in best practices for Web design, Software Architecture, and Continuous Integration technologies.",
+        "Leading expert in configuration of Continuous Integration workflows to improve DevOps practices, working with TeamCity, Octopus Deploy, and Jenkins in both Linux and Windows environments."
+      ]
+    },
+    {
+      "employer": "MEDTRON Software Intelligence Corporation",
+      "title": "Application Programmer / Analyst",
+      "description": [
+        "Works with leading edge web technologies such as HTML5, CSS3, PHP, Zend MVC, PDO DB Abstraction with Doctrine 2 ORM/DBAL.",
+        "Works to improve MEDTRON's Electronic Health Record System (EHR)."
+      ]
+    },
+    {
+      "employer": "York Risk Services Group, Inc.",
+      "title": "Software Engineer I & II",
+      "description": [
+        "Progress 4GL - OpenEdge Advanced Business Language, or OpenEdge ABL for short, is a business application development language created and maintained by Progress Software Corporation (PSC).",
+        "Open Source - JavaScript, jQuery, jQueryUI, PHP, MySQL, Perl, XML, HTML, CSS. Server Configuration/Administration – SuSE Linux Enterprise, Apache 2.x, Apache Tomcat 5.x/6, Apache Solr, Apache Lucene, Secure FTP.",
+        "Adobe LiveCycle - Trained in Adobe LiveCycle ES2 Process Development, LiveCycle ES2 Server Configuration and Management, Adobe ES2 Form Design and Implementation.",
+        "Web Services - Familiar with many web service protocols, including SOAP and REST endpoint configurations in Progress and Java environments.",
+        "Web Design (HCI) - Implementation of existing and new HCI (Human-Computer Interaction) interface design and development. Self-taught graphics design and implementation in web and desktop environments; including Progress SpeedScript, PHP, HTML, and JavaScript and JavaScript frameworks as well as using graphics design tools such as Adobe Fireworks, Illustrator, and Photoshop."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "university": "Southeastern Louisiana University",
+      "degree": "Bachelor of Science in Computer Science",
+      "tenure": "Aug 2005 - Dec 2010",
+      "concentration": "Scientific concentration",
+      "project": "Create a ride-sharing app to help link communities of students with others to work out riding sharing for economical purposes."
+    }
+  ]
+}
