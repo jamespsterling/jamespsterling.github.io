@@ -10,7 +10,6 @@ const concat = require("gulp-concat");
 const clean = require("gulp-clean");
 const imagemin = require("gulp-imagemin");
 const changed = require("gulp-changed");
-const remoteSrc = require("gulp-remote-src");
 const browsersync = require("browser-sync").create();
 
 // BrowserSync
@@ -44,11 +43,6 @@ function img() {
 }
 
 function js() {
-  // console.log(
-  //   remoteSrc(["jquery-3.3.1.min.js"], {
-  //     base: "https://code.jquery.com/",
-  //   })
-  // );
   const source = "./src/js/*.js";
 
   return src(source)
