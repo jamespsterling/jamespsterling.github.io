@@ -1,101 +1,41 @@
-(function ($) {
-  // Remove no-js class
-  $("html").removeClass("no-js");
+document.querySelector("html").classList.remove("no-js");
 
-  // Animate to section when nav is clicked
-  $("header a").click(function (e) {
-    e.preventDefault();
-    var heading = $(this).attr("href");
-    var scrollDistance = $(heading).offset().top;
+if (document.querySelector("header").classList.contains("active")) {
+  document.querySelector("header").classList.remove("active");
+  document.querySelector("body").classList.remove("active");
+}
 
-    $("html, body").animate(
-      {
-        scrollTop: scrollDistance + "px",
-      },
-      300
-    );
+document.querySelector("header a").onclick = function (e) {
+  e.preventDefault();
+  var scrollDistance = document
+    .querySelector("header a")
+    .getAttribute("href")
+    .getBoundingClientRect().top;
+  window.scroll({ top: scrollDistance, behavior: "smooth" });
+};
 
-    // Hide the menu once clicked if mobile
-    if ($("header").hasClass("active")) {
-      $("header, body").removeClass("active");
-    }
-  });
+document.querySelector("#to-top").onclick = function (e) {
+  window.scroll({ top: 0, behavior: "smooth" });
+};
 
-  // Scroll to top
-  $("#to-top").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      300
-    );
-  });
+document.querySelector("#lead-down span").onclick = function (e) {
+  var scrollDistance = document
+    .querySelector("#lead-down span")
+    .getBoundingClientRect().top;
 
-  // Scroll to first element
-  $("#lead-down span").click(function () {
-    var scrollDistance = $("#lead").next().offset().top;
-    $("html, body").animate(
-      {
-        scrollTop: scrollDistance + "px",
-      },
-      500
-    );
-  });
+  window.scroll({ top: scrollDistance, behavior: "smooth" });
+};
 
-  // Create timeline
-  $("#experience-timeline").each(function () {
-    $this = $(this); // Store reference to this
-    $userContent = $this.children("div"); // user content
+document.querySelector("#mobile-menu-open").onclick = function (e) {
+  document.querySelector("body").classList.add("active");
+  document.querySelector("header").classList.add("active");
+};
 
-    // Create each timeline block
-    $userContent.each(function () {
-      $(this)
-        .addClass("vtimeline-content")
-        .addClass("shadow-large")
-        .wrap(
-          '<div class="vtimeline-point"><div class="vtimeline-block"></div></div>'
-        );
-    });
+document.querySelector("#mobile-menu-close").onclick = function (e) {
+  document.querySelector("body").classList.remove("active");
+  document.querySelector("header").classList.remove("active");
+};
 
-    // Add icons to each block
-    var i = 0,
-      icons = [
-        "fab fa-angular",
-        "fab fa-node-js",
-        "fas fa-laptop-code",
-        "fab fa-php",
-        "fas fa-code",
-      ];
-    $this.find(".vtimeline-point").each(function () {
-      $(this).prepend(
-        '<div class="vtimeline-icon"><i class="' + icons[i] + '"></i></div>'
-      );
-      i++;
-    });
-
-    // Add dates to the timeline if exists
-    $this.find(".vtimeline-content").each(function () {
-      var date = $(this).data("date");
-      if (date) {
-        // Prepend if exists
-        $(this)
-          .parent()
-          .prepend('<span class="vtimeline-date">' + date + "</span>");
-      }
-    });
-  });
-
-  // Open mobile menu
-  $("#mobile-menu-open").click(function () {
-    $("header, body").addClass("active");
-  });
-
-  // Close mobile menu
-  $("#mobile-menu-close").click(function () {
-    $("header, body").removeClass("active");
-  });
-
-  var myLazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-  });
-})(jQuery);
+var myLazyLoad = new LazyLoad({
+  elements_selector: ".lazy",
+});

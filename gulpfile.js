@@ -36,10 +36,7 @@ function clear() {
 }
 
 function img() {
-  return src("./src/img/*")
-    .pipe(changed("./dist/img/"))
-    .pipe(imagemin())
-    .pipe(dest("./dist/img"));
+  return src("./src/img/*").pipe(imagemin()).pipe(dest("./dist/img"));
 }
 
 function js() {
@@ -93,4 +90,5 @@ function watchFiles() {
 }
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.default = series(clear, parallel(js, css, img));
+exports.default = series(parallel(js, css));
+exports.img = parallel(img);
