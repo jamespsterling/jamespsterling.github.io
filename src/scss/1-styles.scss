@@ -794,9 +794,9 @@ footer {
 }
 
 .project-info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(-50%);
   margin-left: 300px;
   padding: 15px;
 
@@ -1064,9 +1064,9 @@ $triad-color-2: #ff6a00;
     }
   }
 
-  .project-image {
-    display: none;
-  }
+  // .project-image {
+  //   display: none;
+  // }
 
   .project-info {
     position: relative;
