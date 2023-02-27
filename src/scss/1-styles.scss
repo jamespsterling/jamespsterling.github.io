@@ -26,32 +26,7 @@
         11. Media Queries
 */
 
-/*
-    ------------------------
-    ----- 1. Variables -----
-    ------------------------
-*/
-
-// Define base and accent colors
-$base-color: #b562b5;
-$triad-color-1: #23986d;
-$triad-color-2: #ff6a00;
-$dark-color: #2a2a2a;
-
-// $base-color-hover: darken($base-color, 10%);
-$base-color-hover: lighten($dark-color, 10%);
-
-// Define background colors
-$background: #2a2a2a;
-$background-dark: #0a0a0a;
-$background-alt: #f2f2f5;
-
-// Define border colors
-$border: #dcd9d9;
-
-// Define text colors
-$heading: #464646;
-$text: #74808a;
+@import "0-colors.scss";
 
 /*
     ---------------------
@@ -455,7 +430,7 @@ footer {
 
 #lead {
   position: relative;
-  background: url(../img/lead-bg-2.jpg);
+  background: url(../img/lead-bg-6.jpg);
   background-size: cover;
   padding: 185px 15px 100px;
   overflow: hidden;
@@ -854,9 +829,9 @@ footer {
     -------------------------------
 */
 
-$base-color: #00a3cc;
-$triad-color-1: #00925e;
-$triad-color-2: #ff6a00;
+$base-color: #63aee0;
+$triad-color-1: #dbdbdb;
+$triad-color-2: #e0df4c;
 
 #contact {
   padding: 50px 15px;
@@ -915,9 +890,9 @@ $triad-color-2: #ff6a00;
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: darken($base-color, 20%);
+    background: darken($triad-color-1, 20%);
     color: #fff;
-    border: 1px darken($base-color, 50%);
+    border: 1px darken($triad-color-1, 50%);
     @include transition();
     @include placeholder {
       color: #fff;
@@ -925,7 +900,7 @@ $triad-color-2: #ff6a00;
 
     &:focus {
       outline: none;
-      background: darken($base-color, 22%);
+      background: darken($triad-color-1, 22%);
     }
   }
 
