@@ -24,7 +24,7 @@
     "gulp-imagemin": "7.1.0",
     "gulp-remote-src": "0.4.4",
     "gulp-rename": "1.4.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "5.1.0",
     "gulp-uglify": "2.1.2"
   },
   "dependencies": {
